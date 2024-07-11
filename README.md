@@ -74,5 +74,7 @@ Verify permissions and branch settings on GitHub for deploying to gh-pages.
 Resources
 
 React Documentation
+
 GitHub Pages Documentation
+
 npm Documentation
