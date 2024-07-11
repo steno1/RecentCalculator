@@ -1,0 +1,59 @@
+/* Reset and set box-sizing for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the body */
+body {
+    background: black; /* Background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+/* Styling for the container */
+.container {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: rgb(239, 234, 245);
+    width: 100%;
+    max-width: 400px; /* Set a max-width for responsiveness */
+}
+
+/* Styling for the form inside the container */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the buttons */
+}
+
+/* Styling for the calculator buttons */
+form input[type="button"] {
+    border: 0;
+    outline: 0;
+    width: 4rem; /* Adjusted button width */
+    height: 4rem; /* Adjusted button height */
+    text-align: center;
+    border-radius: 0.5rem;
+    background: black; /* Button background color */
+    font-size: 1.5rem; /* Reduced font size for better mobile view */
+    color: white; /* Button text color */
+    cursor: pointer;
+    margin: .5rem;
+}
+
+/* Styling for the display input field */
+#display {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #EB5B00; /* Display background color */
+    font-size: 1.5rem;
+    border: 0;
+    outline: 0;
+    border-radius: 0.5rem;
+}
