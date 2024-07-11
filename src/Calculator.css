@@ -1,80 +1,88 @@
+/* Apply box-sizing to all elements for consistent sizing */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Set default font */
 }
 
+/* Style the body element */
 body {
-    background: #f9f9f9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    margin: 0;
+    background: #f9f9f9; /* Light gray background */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 1rem; /* Padding around the content */
+    margin: 0; /* Remove default margin */
 }
 
+/* Style the main container */
 .container {
-    padding: 1rem;
-    border-radius: 1rem;
-    background: #FF4C4C;
-    width: 100%;
-    max-width: 400px;
-    margin: 1rem;
+    padding: 1rem; /* Padding inside the container */
+    border-radius: 1rem; /* Rounded corners */
+    background: #FF4C4C; /* Red background */
+    width: 100%; /* Take up full width of parent */
+    max-width: 400px; /* Limit maximum width */
+    margin: 1rem; /* Margin around the container */
 }
 
+/* Style the form inside the container */
 form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow elements to wrap */
+    justify-content: center; /* Center items horizontally */
 }
 
+/* Style the buttons inside the form */
 form input[type="button"] {
-    border: 0;
-    outline: 0;
-    width: 4rem;
-    height: 4rem;
-    text-align: center;
-    border-radius: 0.5rem;
-    background: black;
-    font-size: 1.5rem;
-    color: white;
-    cursor: pointer;
-    margin: 0.5rem;
+    border: 0; /* Remove border */
+    outline: 0; /* Remove outline */
+    width: 4rem; /* Button width */
+    height: 4rem; /* Button height */
+    text-align: center; /* Center text horizontally */
+    border-radius: 0.5rem; /* Rounded corners */
+    background: black; /* Black background */
+    font-size: 1.5rem; /* Font size */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor */
+    margin: 0.5rem; /* Margin around buttons */
 }
 
+/* Style the display input field */
 #display {
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    background: #EB5B00;
-    font-size: 1.5rem;
-    border: 0;
-    outline: 0;
-    border-radius: 0.5rem;
-    color: white;
+    width: 100%; /* Take up full width */
+    margin-bottom: 1rem; /* Margin at the bottom */
+    padding: 0.5rem; /* Padding inside */
+    background: #EB5B00; /* Orange background */
+    font-size: 1.5rem; /* Font size */
+    border: 0; /* Remove border */
+    outline: 0; /* Remove outline */
+    border-radius: 0.5rem; /* Rounded corners */
+    color: white; /* Text color */
 }
 
+/* Style the '=' button */
 #plus {
-    height: 4rem;
-    background-color: black;
-    color: white;
-    width: calc(50% - 1rem);
+    height: 4rem; /* Button height */
+    background-color: black; /* Black background */
+    color: white; /* Text color */
+    width: calc(50% - 1rem); /* Adjusted width */
 }
 
+/* Media query for smaller screens */
 @media (max-width: 400px) {
     form input[type="button"] {
-        width: 4.5rem;
-        height: 4.5rem;
-        font-size: 1.2rem;
-        margin: 0.25rem;
+        width: 4.5rem; /* Larger button width */
+        height: 4.5rem; /* Larger button height */
+        font-size: 1.2rem; /* Smaller font size */
+        margin: 0.25rem; /* Adjusted margin */
     }
     
     .container {
-        margin: 0;
-        width: 98vw;
-        height: 80vh;
-        border-radius: 0;
-        padding: 2rem 1rem;
+        margin: 0; /* Remove margin */
+        width: 98vw; /* 98% of viewport width */
+        height: 80vh; /* 80% of viewport height */
+        border-radius: 0; /* Remove border radius */
+        padding: 2rem 1rem; /* Adjusted padding */
     }
 }
