@@ -1,14 +1,7 @@
 Calculator App Documentation
-This documentation provides instructions for setting up and deploying the Calculator app built with React on GitHub Pages.
 
-Table of Contents
 Overview
-Setup
-Deployment
-Customization
-Troubleshooting
-Resources
-Overview
+
 The Calculator app is a simple web application built using React. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
 Setup
@@ -37,7 +30,8 @@ npm install
 Deployment
 The Calculator app is deployed using GitHub Pages. Follow these steps to deploy the app:
 
-1. Configure package.json
+Configure package.json
+
 Ensure your package.json file includes the "homepage" field with your GitHub Pages URL. For example:
 
 json
@@ -48,7 +42,8 @@ Copy code
   "homepage": "https://your-username.github.io/calculator",
   // other configurations...
 }
-2. Deploying to GitHub Pages
+Deploying to GitHub Pages
+
 Use the following npm script to deploy the app:
 
 bash
@@ -56,7 +51,8 @@ Copy code
 npm run deploy
 This script builds the app and deploys it to the gh-pages branch of your repository.
 
-3. Access Your Deployed App
+Access Your Deployed App
+
 Once deployed, your Calculator app will be accessible at the URL specified in the "homepage" field of package.json.
 
 Customization
