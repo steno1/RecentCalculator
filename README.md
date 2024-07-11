@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+Calculator App Documentation
+This documentation provides instructions for setting up and deploying the Calculator app built with React on GitHub Pages.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+Overview
+Setup
+Deployment
+Customization
+Troubleshooting
+Resources
+Overview
+The Calculator app is a simple web application built using React. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
-## Available Scripts
+Setup
+Prerequisites
+Before getting started, ensure you have the following installed on your local machine:
 
-In the project directory, you can run:
+Node.js and npm (Node Package Manager)
+Installation
+To install and run the Calculator app locally, follow these steps:
 
-### `npm start`
+Clone the repository from GitHub:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+git clone https://github.com/your-username/calculator.git
+Navigate into the project directory:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+cd calculator
+Install dependencies using npm:
 
-### `npm test`
+bash
+Copy code
+npm install
+Deployment
+The Calculator app is deployed using GitHub Pages. Follow these steps to deploy the app:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Configure package.json
+Ensure your package.json file includes the "homepage" field with your GitHub Pages URL. For example:
 
-### `npm run build`
+json
+Copy code
+{
+  "name": "calculator",
+  "version": "0.1.0",
+  "homepage": "https://your-username.github.io/calculator",
+  // other configurations...
+}
+2. Deploying to GitHub Pages
+Use the following npm script to deploy the app:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+npm run deploy
+This script builds the app and deploys it to the gh-pages branch of your repository.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Access Your Deployed App
+Once deployed, your Calculator app will be accessible at the URL specified in the "homepage" field of package.json.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Customization
+Styling
+The Calculator app uses CSS for styling. You can customize the appearance by modifying the styles in Calculator.css.
 
-### `npm run eject`
+Functionality
+To add more functionality or modify existing features, edit the Calculator.js file where the main application logic resides.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Troubleshooting
+If you encounter issues during setup or deployment, here are some common troubleshooting steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ensure Node.js and npm are up to date.
+Double-check the "homepage" field in package.json.
+Verify permissions and branch settings on GitHub for deploying to gh-pages.
+Resources
+React Documentation
+GitHub Pages Documentation
+npm Documentation
