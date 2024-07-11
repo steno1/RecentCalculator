@@ -1,4 +1,4 @@
-#CALULATOR APP DOCUMENTATION
+CALCULATOR APP DOCUMENTATION
 
 
 #OVERVIEW
@@ -59,14 +59,20 @@ Functionality
 To add more functionality or modify existing features, edit the Calculator.js file where the main application logic resides.
 
 
+
 Troubleshooting
 If you encounter issues during setup or deployment, here are some common troubleshooting steps:
 
 
+
 Ensure Node.js and npm are up to date.
+
 Double-check the "homepage" field in package.json.
+
 Verify permissions and branch settings on GitHub for deploying to gh-pages.
+
 Resources
+
 React Documentation
 GitHub Pages Documentation
 npm Documentation
